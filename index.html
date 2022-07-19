@@ -32,6 +32,12 @@
         padding-top: 20px;
         height: 66px;
     }
+    .nav a{
+        text-decoration:none;
+        color:#F6CC07;
+        padding-top: 20px;
+        height: 66px;
+    }
     .navbar a:active{
         color:#3A3A3A!important;
         background:#F6CC07!important;
@@ -66,6 +72,9 @@
     .contact-wrapper{
         background:url("images/img2.jpg");
     }
+    .custom-padding a{
+        padding-left:16px!important;
+    }
     @media screen and (max-width:768px){
         .service-image{
         width:25px;
@@ -83,14 +92,42 @@
         <section>
             <nav class="navbar navbar-expand-lg bg-info p-0">
                 <div class="container p-0">
-                    <a href="#" class="navbar-brand">
-                        <img src="images/logo.png" class="img-fluid"/>
-                    </a>
-                    <button class="navbar-toggler yellow m-3" type="button" data-bs-toggle="collapse" data-bs-target="#target">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand">
+                            <img src="images/logo.png" class="img-fluid"/>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler yellow m-3" type="button" data-bs-toggle="collapse" data-bs-target="#target1">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="target">
-                        <ul class="navbar-nav me-auto">
+                    <div class="d-none d-lg-block ms-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" >HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">OUR TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="target1">
+                        <ul class="navbar-nav me-auto d-lg-none custom-padding">
                             <li class="nav-item d-block ">
                                 <a href="#" class="nav-link active">HOME</a>
                             </li>
@@ -114,6 +151,7 @@
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
         </section>
@@ -215,7 +253,6 @@
                     <div class="row pt-5">
                         <div class="col-12 col-md-4 mx-auto">
                             <h1 class="display-3 text-center">About Us</h1>
-                            <!-- <img class="service-image mx-auto d-block mt-3" src="images/stars.png"/> -->
                         </div>
                     </div>
                     <div class="row pt-4">
